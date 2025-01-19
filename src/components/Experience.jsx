@@ -13,7 +13,7 @@ function Experience() {
               </div>
               <div>
                 <h3 className="text-2xl font-semibold mb-2">Desarrollador Web Jr - NeonHouseLed</h3>
-                <p className="text-blue-400 mb-4">Noviembre 2024 - Presente</p>
+                <p className="text-blue-400 mb-4">Diciembre 2024 - Presente</p>
                 <ul className="space-y-4 text-gray-300">
                   <li className="flex items-start gap-3">
                     <Database className="flex-shrink-0 mt-1 text-blue-400" size={20} />
