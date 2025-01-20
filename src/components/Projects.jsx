@@ -1,6 +1,7 @@
 import RidenOn from "../assets/RidenOn.png";
 import Calculator from "../assets/Calculator.png";
 import UniTrack from "../assets/UniTrack.png";
+import OrganAlzer from "../assets/OrganAlzer.png";
 
 const projects = [
     {
@@ -27,6 +28,15 @@ const projects = [
       description: "UniTrack es una plataforma para gestionar y hacer seguimiento de tu rendimiento académico. Registra tus cursos, calcula tu promedio ponderado y más.",
       github: "https://github.com/SandovalCoder/PoderadoUniversitario",
     },
+
+    {
+      id: 4,
+      name: "OrganAlzer",
+      technologies: "HTML5, CSS3, JavaScript",
+      image: OrganAlzer,
+      description: "OrganAIzer es un asistente de productividad inteligente que te ayuda a organizar tareas, establecer recordatorios y gestionar tu tiempo de manera eficiente.",
+      github: "https://github.com/SandovalCoder/Coder.github.io",
+    }
   ];
   
   const Projects = () => {
