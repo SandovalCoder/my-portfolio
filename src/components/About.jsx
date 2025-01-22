@@ -14,11 +14,10 @@ const About = () => {
             />
             <div className="flex-1">
               <p className="text-lg mb-8">
-                Soy un estudiante del octavo ciclo de Ingeniería de Sistemas de Información, 
-                apasionado por la tecnología y el desarrollo full-stack que se centra en la creación de
-                aplicaciones web modernas y responsivas. Con una sólida base
-                en tecnologías frontend y backend, me esfuerzo por crear
-                experiencias de usuario fluidas y eficientes.
+              Soy estudiante de 8vo ciclo de Ingeniería de Sistemas de Información, apasionado por el desarrollo full-stack 
+              y la creación de aplicaciones web modernas y responsivas. Tengo experiencia en frontend y backend, y me esfuerzo 
+              por ofrecer soluciones tecnológicas eficientes y de alto rendimiento.Además, me interesa la mejora de procesos 
+              empresariales, optimizando sistemas y flujos de trabajo para mejorar la experiencia del usuario y la eficiencia operativa.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -39,7 +38,7 @@ const About = () => {
                   <div className="grow bg-gray-800 rounded-full h-2.5">
                     <div
                       className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                      transform transition-transform duration-300 hover:scale-105 w-6/12"
+                      transform transition-transform duration-300 hover:scale-105 w-8/12"
                     ></div>
                   </div>
                 </div>
@@ -50,7 +49,7 @@ const About = () => {
                   <div className="grow bg-gray-800 rounded-full h-2.5">
                     <div
                       className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                      transform transition-transform duration-300 hover:scale-105 w-3/12"
+                      transform transition-transform duration-300 hover:scale-105 w-6/12"
                     ></div>
                   </div>
                 </div>

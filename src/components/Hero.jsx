@@ -14,7 +14,7 @@ function Hero() {
         </h1>
 
         <p className="mt-4 text-lg text-gray-300">
-        Desarrollador frontend, Backend y Mejora de Procesos.
+        Desarrollador Full-Stack | Enfocado en la Tecnología y la Mejora de Procesos Empresariales
         </p>
         <div className="mt-8 space-x-4">
             <button
