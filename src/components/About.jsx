@@ -1,91 +1,152 @@
-
-import SandovalCoder from "../assets/SandovalCoder.jpg";
+import technologies from "../types/technologies";
 
 const About = () => {
-    return (
-      <div className="bg-black text-white py-20" id="about">
-        <div className="container mx-auto px-8 md:px-16 lg:px-24">
-          <h2 className="text-4xl font-bold text-center mb-12">Sobre Mi</h2>
-          <div className="flex flex-col md:flex-row items-center md:space-x-12">
-            <img
-              src={SandovalCoder}
-              alt=""
-              className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
-            />
-            <div className="flex-1">
-              <p className="text-lg mb-8">
-              Soy estudiante de 8vo ciclo de Ingeniería de Sistemas de Información, apasionado por el desarrollo full-stack 
-              y la creación de aplicaciones web modernas y responsivas. Tengo experiencia en frontend y backend, y me esfuerzo 
-              por ofrecer soluciones tecnológicas eficientes y de alto rendimiento.Además, me interesa la mejora de procesos 
-              empresariales, optimizando sistemas y flujos de trabajo para mejorar la experiencia del usuario y la eficiencia operativa.
+  return (
+    <div className="bg-black text-white py-20" id="about">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24">
+        <h2 className="text-4xl font-bold text-center mb-12">Sobre Mi</h2>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          {/* Description */}
+          <div className="space-y-8">
+            <div>
+              <p className="text-lg mb-8 text-justify">
+                Estudiante de 8vo ciclo de Ingeniería de Sistemas de Información
+                y{" "}
+                <span
+                  className=" font-bold text-transparent bg-clip-text 
+                  bg-gradient-to-r from-green-400 to-blue-500 "
+                >
+                  Desarrollador Web
+                </span>{" "}
+                apasionado por crear soluciones tecnológicas innovadoras y
+                eficientes. Con experiencia en{" "}
+                <span
+                  className=" font-bold text-transparent bg-clip-text 
+                  bg-gradient-to-r from-green-400 to-blue-500"
+                >
+                  frontend
+                </span>{" "}
+                y{" "}
+                <span
+                  className=" font-bold text-transparent bg-clip-text 
+                  bg-gradient-to-r from-green-400 to-blue-500"
+                >
+                  backend
+                </span>
+                , me especializo en aplicaciones web modernas, responsivas y de
+                alto rendimiento. Mi objetivo es combinar tecnología y
+                creatividad para resolver problemas y mejorar la experiencia del
+                usuario. ¡Siempre listo para nuevos desafíos!
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <label htmlFor="htmlandcss" className="w-2/12">
-                    HTML & CSS
-                  </label>
-                  <div className="grow bg-gray-800 rounded-full h-2.5">
-                    <div
-                      className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                      transform transition-transform duration-300 hover:scale-105 w-10/12"
-                    ></div>
-                  </div>
+              {/* Download CV */}
+              <div className="mt-8 text-center">
+                <button className="px-6 py-2 border border-white rounded-full hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-white transition-colors">
+                  Descargar CV
+                </button>
+              </div>
+
+              {/* Experience y projects */}
+              <div className="mt-12 flex justify-center space-x-12 text-center">
+                <div>
+                  <h3
+                    className="text-2xl font-bold text-transparent bg-clip-text 
+                  bg-gradient-to-r from-green-400 to-blue-500"
+                  >
+                    1
+                  </h3>
+                  <p>Años de experiencia</p>
                 </div>
-                <div className="flex items-center">
-                  <label htmlFor="htmlandcss" className="w-2/12">
-                    React
-                  </label>
-                  <div className="grow bg-gray-800 rounded-full h-2.5">
-                    <div
-                      className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                      transform transition-transform duration-300 hover:scale-105 w-8/12"
-                    ></div>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <label htmlFor="htmlandcss" className="w-2/12">
-                  Angular
-                  </label>
-                  <div className="grow bg-gray-800 rounded-full h-2.5">
-                    <div
-                      className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                      transform transition-transform duration-300 hover:scale-105 w-6/12"
-                    ></div>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <label htmlFor="htmlandcss" className="w-2/12">
-                  Spring Boot
-                  </label>
-                  <div className="grow bg-gray-800 rounded-full h-2.5">
-                    <div
-                      className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                      transform transition-transform duration-300 hover:scale-105 w-5/12"
-                    ></div>
-                  </div>
+                <div>
+                  <h3
+                    className="text-2xl font-bold text-transparent bg-clip-text 
+                  bg-gradient-to-r from-green-400 to-blue-500"
+                  >
+                    10+
+                  </h3>
+                  <p>Proyectos completados</p>
                 </div>
               </div>
-              <div className="mt-12 flex justify-center space-x-12 text-center">
-                  <div>
-                      <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                  bg-gradient-to-r from-green-400 to-blue-500">
-                          1
-                      </h3>
-                      <p>Años de experiencia</p>
-                  </div>
-                  <div>
-                      <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                  bg-gradient-to-r from-green-400 to-blue-500">
-                          10+
-                      </h3>
-                      <p>Proyectos completados</p>
-                  </div>
+            </div>
+          </div>
+
+          {/* Right Column - Skills */}
+          <div>
+            <div className="space-y-12">
+              {/* Frontend */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
+                  Front-End
+                </h3>
+                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-8">
+                  {technologies.frontend.map((tech, index) => (
+                    <div key={index} className="group relative">
+                      <div className="w-16 h-16 mx-auto bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition-all duration-300">
+                        <img
+                          src={tech.icon}
+                          alt={tech.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        {tech.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Backend */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
+                  Back-End
+                </h3>
+                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-8">
+                  {technologies.backend.map((tech, index) => (
+                    <div key={index} className="group relative">
+                      <div className="w-16 h-16 mx-auto bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition-all duration-300">
+                        <img
+                          src={tech.icon}
+                          alt={tech.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        {tech.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* programming languages */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
+                  Lenguajes de Programación
+                </h3>
+                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-8">
+                  {technologies.languages.map((tech, index) => (
+                    <div key={index} className="group relative">
+                      <div className="w-16 h-16 mx-auto bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition-all duration-300">
+                        <img
+                          src={tech.icon}
+                          alt={tech.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        {tech.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    );
-  };
-  
-  export default About;
+    </div>
+  );
+};
+
+export default About;
